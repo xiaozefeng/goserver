@@ -1,0 +1,31 @@
+{"level":"INFO","timestamp":"2019-09-05 17:19:50.835","file":"goserver/main.go:47","msg":"Start to listening the incoming requests on http address: :8080"}
+{"level":"INFO","timestamp":"2019-09-05 17:19:50.836","file":"goserver/main.go:42","msg":"The router has been deployed successfully"}
+{"level":"ERROR","timestamp":"2019-09-06 11:01:34.653","file":"model/init.go:28","msg":"DataBase connection failed. DataBase name: db","data":{"error":"Error 1049: Unknown database 'db'"}}
+{"level":"ERROR","timestamp":"2019-09-06 11:01:34.656","file":"model/init.go:28","msg":"DataBase connection failed. DataBase name: docker_db","data":{"error":"Error 1049: Unknown database 'docker_db'"}}
+{"level":"INFO","timestamp":"2019-09-06 11:01:34.656","file":"goserver/main.go:50","msg":"Start to listening the incoming requests on http address: :8080"}
+{"level":"INFO","timestamp":"2019-09-06 11:01:34.658","file":"goserver/main.go:45","msg":"The router has been deployed successfully"}
+{"level":"ERROR","timestamp":"2019-09-06 11:50:44.507","file":"model/init.go:28","msg":"DataBase connection failed. DataBase name: db","data":{"error":"Error 1049: Unknown database 'db'"}}
+{"level":"ERROR","timestamp":"2019-09-06 11:50:44.514","file":"model/init.go:28","msg":"DataBase connection failed. DataBase name: docker_db","data":{"error":"Error 1049: Unknown database 'docker_db'"}}
+{"level":"INFO","timestamp":"2019-09-06 11:50:44.514","file":"goserver/main.go:50","msg":"Start to listening the incoming requests on http address: :8080"}
+{"level":"INFO","timestamp":"2019-09-06 11:50:44.515","file":"goserver/main.go:45","msg":"The router has been deployed successfully"}
+{"level":"DEBUG","timestamp":"2019-09-06 11:51:05.429","file":"user/user.go:23","msg":"username is: [], password is []"}
+{"level":"DEBUG","timestamp":"2019-09-06 11:51:05.429","file":"user/user.go:31","msg":"err type is ErrUserNotFound"}
+{"level":"ERROR","timestamp":"2019-09-06 12:17:23.134","file":"model/init.go:28","msg":"DataBase connection failed. DataBase name: db","data":{"error":"Error 1049: Unknown database 'db'"}}
+{"level":"ERROR","timestamp":"2019-09-06 12:17:23.135","file":"model/init.go:28","msg":"DataBase connection failed. DataBase name: docker_db","data":{"error":"Error 1049: Unknown database 'docker_db'"}}
+{"level":"INFO","timestamp":"2019-09-06 12:17:23.135","file":"goserver/main.go:50","msg":"Start to listening the incoming requests on http address: :8080"}
+{"level":"INFO","timestamp":"2019-09-06 12:17:23.136","file":"goserver/main.go:45","msg":"The router has been deployed successfully"}
+{"level":"ERROR","timestamp":"2019-09-06 12:33:27.054","file":"model/init.go:28","msg":"DataBase connection failed. DataBase name: db","data":{"error":"Error 1049: Unknown database 'db'"}}
+{"level":"ERROR","timestamp":"2019-09-06 12:33:27.059","file":"model/init.go:28","msg":"DataBase connection failed. DataBase name: docker_db","data":{"error":"Error 1049: Unknown database 'docker_db'"}}
+{"level":"INFO","timestamp":"2019-09-06 12:33:27.067","file":"goserver/main.go:62","msg":"Waiting for the router, retry in 1 second."}
+{"level":"INFO","timestamp":"2019-09-06 12:33:27.070","file":"goserver/main.go:50","msg":"Start to listening the incoming requests on http address: :8080"}
+{"level":"INFO","timestamp":"2019-09-06 12:33:28.070","file":"goserver/main.go:45","msg":"The router has been deployed successfully"}
+{"level":"DEBUG","timestamp":"2019-09-06 12:33:38.724","file":"user/user.go:21","msg":"username is: [], password is []"}
+{"level":"DEBUG","timestamp":"2019-09-06 12:34:04.558","file":"user/user.go:21","msg":"username is: [], password is []"}
+{"level":"ERROR","timestamp":"2019-09-06 12:34:10.254","file":"model/init.go:28","msg":"DataBase connection failed. DataBase name: db","data":{"error":"Error 1049: Unknown database 'db'"}}
+{"level":"ERROR","timestamp":"2019-09-06 12:34:10.255","file":"model/init.go:28","msg":"DataBase connection failed. DataBase name: docker_db","data":{"error":"Error 1049: Unknown database 'docker_db'"}}
+{"level":"INFO","timestamp":"2019-09-06 12:34:10.255","file":"goserver/main.go:50","msg":"Start to listening the incoming requests on http address: :8080"}
+{"level":"INFO","timestamp":"2019-09-06 12:34:10.257","file":"goserver/main.go:45","msg":"The router has been deployed successfully"}
+{"level":"DEBUG","timestamp":"2019-09-06 12:34:12.836","file":"user/user.go:21","msg":"username is: [], password is []"}
+{"level":"DEBUG","timestamp":"2019-09-06 12:34:35.411","file":"user/user.go:21","msg":"username is: [], password is []"}
+{"level":"DEBUG","timestamp":"2019-09-06 12:34:58.017","file":"user/user.go:21","msg":"username is: [], password is [123]"}
+{"level":"DEBUG","timestamp":"2019-09-06 12:35:09.452","file":"user/user.go:21","msg":"username is: [admin], password is [123]"}
