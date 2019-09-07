@@ -2,8 +2,9 @@ package util
 
 import "github.com/teris-io/shortid"
 
-func GetSorterId() (string, error) {
-	return shortid.Generate()
+func GetSorterId() string {
+	r, _ := shortid.Generate()
+	return r
 }
 
 

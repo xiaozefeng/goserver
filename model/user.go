@@ -1,6 +1,10 @@
 package model
 
-import "gopkg.in/go-playground/validator.v9"
+import (
+	"fmt"
+	"github.com/xiaozefeng/goserver/pkg/auth"
+	"gopkg.in/go-playground/validator.v9"
+)
 
 type UserModel struct {
 	BaseModel
@@ -32,15 +36,33 @@ func GetUserByUsername(username string) (*UserModel, error) {
 	return u, d.Error
 }
 
-func (u *UserModel) Compare(pwd string) bool {
-	return false
+func (u *UserModel) Compare(pwd string) error {
+	return auth.Compare(u.Password, pwd)
 }
 
-func (u *UserModel) Encrypt() error {
-	return nil
+func (u *UserModel) Encrypt() (err error) {
+	u.Password, err = auth.Encrypt(u.Password)
+	return err
 }
 
 func (u *UserModel) Validate() error {
 	v := validator.New()
 	return v.Struct(u)
+}
+
+func ListUser(username string, offset, limit int) ([]*UserModel, uint64, error) {
+	if limit == 0 {
+		limit = 10
+	}
+	where := fmt.Sprintf("username like '%%%s%%'", username)
+	var total uint64
+	users := make([]*UserModel, 0)
+	if err := DB.Self.Model(&UserModel{}).Where(where).Count(&total).Error; err != nil {
+		return users, 0, err
+	}
+
+	if err := DB.Self.Where(where).Offset(offset).Limit(limit).Order("id desc").Find(&users).Error; err != nil {
+		return users, 0, err
+	}
+	return users, total, nil
 }

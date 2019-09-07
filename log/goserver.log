@@ -29,3 +29,26 @@
 {"level":"DEBUG","timestamp":"2019-09-06 12:34:35.411","file":"user/user.go:21","msg":"username is: [], password is []"}
 {"level":"DEBUG","timestamp":"2019-09-06 12:34:58.017","file":"user/user.go:21","msg":"username is: [], password is [123]"}
 {"level":"DEBUG","timestamp":"2019-09-06 12:35:09.452","file":"user/user.go:21","msg":"username is: [admin], password is [123]"}
+{"level":"ERROR","timestamp":"2019-09-07 09:28:39.129","file":"model/init.go:28","msg":"DataBase connection failed. DataBase name: goserver","data":{"error":"dial tcp 127.0.0.1:3306: connect: connection refused"}}
+{"level":"ERROR","timestamp":"2019-09-07 09:28:39.130","file":"model/init.go:28","msg":"DataBase connection failed. DataBase name: goserver","data":{"error":"dial tcp 127.0.0.1:3306: connect: connection refused"}}
+{"level":"INFO","timestamp":"2019-09-07 09:28:39.130","file":"goserver/main.go:50","msg":"Start to listening the incoming requests on http address: :8080"}
+{"level":"INFO","timestamp":"2019-09-07 09:28:39.131","file":"goserver/main.go:45","msg":"The router has been deployed successfully"}
+{"level":"INFO","timestamp":"2019-09-07 09:45:31.971","file":"goserver/main.go:50","msg":"Start to listening the incoming requests on http address: :8080"}
+{"level":"INFO","timestamp":"2019-09-07 09:45:31.972","file":"goserver/main.go:45","msg":"The router has been deployed successfully"}
+{"level":"INFO","timestamp":"2019-09-07 19:53:53.751","file":"goserver/main.go:50","msg":"Start to listening the incoming requests on http address: :8080"}
+{"level":"INFO","timestamp":"2019-09-07 19:53:53.761","file":"goserver/main.go:45","msg":"The router has been deployed successfully"}
+{"level":"DEBUG","timestamp":"2019-09-07 19:54:07.739","file":"user/user.go:26","msg":"username is: [kong], password is [kong123]"}
+{"level":"INFO","timestamp":"2019-09-07 19:58:47.197","file":"goserver/main.go:50","msg":"Start to listening the incoming requests on http address: :8080"}
+{"level":"INFO","timestamp":"2019-09-07 19:58:47.199","file":"goserver/main.go:45","msg":"The router has been deployed successfully"}
+{"level":"INFO","timestamp":"2019-09-07 19:58:56.714","file":"user/user.go:17","msg":"User create function called.","data":{"X-Request-Id":"dPGy1H5WR"}}
+{"level":"INFO","timestamp":"2019-09-07 19:59:14.380","file":"goserver/main.go:50","msg":"Start to listening the incoming requests on http address: :8080"}
+{"level":"INFO","timestamp":"2019-09-07 19:59:14.385","file":"goserver/main.go:45","msg":"The router has been deployed successfully"}
+{"level":"INFO","timestamp":"2019-09-07 19:59:18.046","file":"user/user.go:17","msg":"User create function called.","data":{"X-Request-Id":"j0Qy1H5Zg"}}
+{"level":"INFO","timestamp":"2019-09-07 19:59:36.501","file":"user/user.go:17","msg":"User create function called.","data":{"X-Request-Id":"LJKU1NcWR"}}
+{"level":"INFO","timestamp":"2019-09-07 19:59:58.441","file":"user/user.go:17","msg":"User create function called.","data":{"X-Request-Id":"v6gw1N5Wg"}}
+{"level":"INFO","timestamp":"2019-09-07 20:01:50.681","file":"goserver/main.go:50","msg":"Start to listening the incoming requests on http address: :8080"}
+{"level":"INFO","timestamp":"2019-09-07 20:01:50.683","file":"goserver/main.go:45","msg":"The router has been deployed successfully"}
+{"level":"INFO","timestamp":"2019-09-07 20:01:57.915","file":"user/user.go:18","msg":"User create function called.","data":{"X-Request-Id":"XBYrJNcWg"}}
+{"level":"INFO","timestamp":"2019-09-07 20:02:20.451","file":"goserver/main.go:50","msg":"Start to listening the incoming requests on http address: :8080"}
+{"level":"INFO","timestamp":"2019-09-07 20:02:20.454","file":"goserver/main.go:45","msg":"The router has been deployed successfully"}
+{"level":"INFO","timestamp":"2019-09-07 20:02:23.247","file":"user/user.go:18","msg":"User create function called.","data":{"X-Request-Id":"h5hC1NcWR"}}
