@@ -52,3 +52,11 @@
 {"level":"INFO","timestamp":"2019-09-07 20:02:20.451","file":"goserver/main.go:50","msg":"Start to listening the incoming requests on http address: :8080"}
 {"level":"INFO","timestamp":"2019-09-07 20:02:20.454","file":"goserver/main.go:45","msg":"The router has been deployed successfully"}
 {"level":"INFO","timestamp":"2019-09-07 20:02:23.247","file":"user/user.go:18","msg":"User create function called.","data":{"X-Request-Id":"h5hC1NcWR"}}
+{"level":"INFO","timestamp":"2019-09-08 10:00:40.937","file":"goserver/main.go:50","msg":"Start to listening the incoming requests on http address: :8080"}
+{"level":"INFO","timestamp":"2019-09-08 10:00:40.942","file":"goserver/main.go:62","msg":"Waiting for the router, retry in 1 second."}
+{"level":"INFO","timestamp":"2019-09-08 10:00:41.945","file":"goserver/main.go:45","msg":"The router has been deployed successfully"}
+{"level":"INFO","timestamp":"2019-09-08 23:15:12.924","file":"goserver/main.go:53","msg":"Start to listening the incoming requests on http address: :8080"}
+{"level":"INFO","timestamp":"2019-09-08 23:15:12.925","file":"goserver/main.go:65","msg":"Waiting for the router, retry in 1 second."}
+{"level":"INFO","timestamp":"2019-09-08 23:15:13.928","file":"goserver/main.go:48","msg":"The router has been deployed successfully"}
+{"level":"INFO","timestamp":"2019-09-08 23:15:19.710","file":"middleware/logging.go:82","msg":"10.255ms      | 127.0.0.1    | GET /v1/users/kong | {code: 0, message: OK}"}
+{"level":"INFO","timestamp":"2019-09-08 23:15:47.813","file":"middleware/logging.go:82","msg":"9.792ms       | 127.0.0.1    | GET /v1/users/kong | {code: 0, message: OK}"}

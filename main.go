@@ -8,6 +8,7 @@ import (
 	"github.com/xiaozefeng/goserver/config"
 	"github.com/xiaozefeng/goserver/model"
 	"github.com/xiaozefeng/goserver/router"
+	"github.com/xiaozefeng/goserver/router/middleware"
 
 	"github.com/lexkong/log"
 	"net/http"
@@ -34,8 +35,10 @@ func main() {
 	g := gin.New()
 
 	// load routers
-	var mws []gin.HandlerFunc
-	router.Load(g, mws...)
+	router.Load(g,
+		middleware.Logging(),
+		middleware.RequestId(),
+	)
 
 	// ping server
 	go func() {
