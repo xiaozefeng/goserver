@@ -131,3 +131,7 @@
 {"level":"INFO","timestamp":"2019-09-09 14:43:38.003","file":"user/user.go:76","msg":"update function called. ","data":{"X-Request-Id":"-cSTGpcWg"}}
 {"level":"INFO","timestamp":"2019-09-09 14:43:38.119","file":"middleware/logging.go:82","msg":"116.962096ms  | ::1          | PUT /v1/users/3 | {code: 0, message: OK}"}
 {"level":"INFO","timestamp":"2019-09-09 14:43:40.912","file":"middleware/logging.go:82","msg":"4.51871ms     | ::1          | POST /login | {code: 20102, message: The uservo was not found}"}
+{"level":"INFO","timestamp":"2019-09-09 18:04:53.640","file":"goserver/main.go:54","msg":"Start to listening the incoming requests on http address: :8080"}
+{"level":"INFO","timestamp":"2019-09-09 18:04:53.646","file":"goserver/main.go:49","msg":"The router has been deployed successfully"}
+{"level":"INFO","timestamp":"2019-09-09 18:05:08.218","file":"middleware/logging.go:82","msg":"34.815031ms   | ::1          | POST /login | {code: 20102, message: The uservo was not found}"}
+{"level":"INFO","timestamp":"2019-09-09 18:05:17.735","file":"middleware/logging.go:82","msg":"104.219813ms  | ::1          | POST /login | {code: 0, message: OK}"}

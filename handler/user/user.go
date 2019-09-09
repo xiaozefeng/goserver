@@ -87,7 +87,7 @@ func Update(c *gin.Context) {
 	// we update the record based on the uservo id .
 	u.Id = uint64(userId)
 	dUser, err := model.GetUserByBy(uint64(userId))
-	if err!= nil {
+	if err != nil {
 		handler.SendResponse(c, errno.ErrUserNotFound, nil)
 		return
 	}
@@ -103,7 +103,6 @@ func Update(c *gin.Context) {
 		handler.SendResponse(c, errno.ErrEncrypt, nil)
 		return
 	}
-
 
 	u.CreatedTime = dUser.CreatedTime
 	u.DeletedTime = dUser.DeletedTime

@@ -36,7 +36,6 @@ func GetUserByUsername(username string) (*UserModel, error) {
 	return u, d.Error
 }
 
-
 func GetUserByBy(id uint64) (*UserModel, error) {
 	u := &UserModel{}
 	d := DB.Self.Where("id = ? ", id).First(&u)
