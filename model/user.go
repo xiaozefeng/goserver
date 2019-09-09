@@ -36,6 +36,13 @@ func GetUserByUsername(username string) (*UserModel, error) {
 	return u, d.Error
 }
 
+
+func GetUserByBy(id uint64) (*UserModel, error) {
+	u := &UserModel{}
+	d := DB.Self.Where("id = ? ", id).First(&u)
+	return u, d.Error
+}
+
 func (u *UserModel) Compare(pwd string) error {
 	return auth.Compare(u.Password, pwd)
 }

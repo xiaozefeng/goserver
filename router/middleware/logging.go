@@ -29,7 +29,7 @@ func Logging() gin.HandlerFunc {
 		start := time.Now().UTC()
 		path := c.Request.URL.Path
 		reg := regexp.MustCompile(`(/v1/users|/login)`)
-		if ! reg.MatchString(path) {
+		if !reg.MatchString(path) {
 			return
 		}
 

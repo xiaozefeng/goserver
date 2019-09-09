@@ -18,10 +18,13 @@ func Load(g *gin.Engine, mws ...gin.HandlerFunc) *gin.Engine {
 
 	// add 404 router
 	g.NoRoute(func(c *gin.Context) {
-		c.String(http.StatusNotFound, "The incorrect API router")
+		c.JSON(http.StatusNotFound, gin.H{"code": 10000, "message": "The incorrect API router"})
 	})
 
+	g.POST("/login", user.Login)
+
 	v1u := g.Group("/v1/users")
+	v1u.Use(middleware.AuthMiddleware())
 	{
 		v1u.POST("", user.Create)
 		v1u.GET("", user.List)

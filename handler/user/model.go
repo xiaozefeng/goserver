@@ -10,17 +10,16 @@ type CreateRequest struct {
 }
 
 type CreateResponse struct {
-	 Username string `json:"username"`
+	Username string `json:"username"`
 }
 
 type ListRequest struct {
 	Username string `json:"username"`
-	Offset int `json:"offset"`
-	Limit int `json:"limit"`
+	Offset   int    `json:"offset"`
+	Limit    int    `json:"limit"`
 }
 
 type ListResponse struct {
-	TotalCount uint64            `json:"totalCount"`
+	TotalCount uint64             `json:"totalCount"`
 	UserList   []*uservo.UserInfo `json:"userList"`
 }
-

@@ -27,8 +27,8 @@ func Create(c *gin.Context) {
 		Password: r.Password,
 	}
 	u.CreatedTime = time.Now()
-	u.UpdateTime= time.Now()
-	u.DeletedTime= time.Now()
+	u.UpdateTime = time.Now()
+	u.DeletedTime = time.Now()
 
 	if err := u.Validate(); err != nil {
 		handler.SendResponse(c, errno.ErrValidation, nil)
@@ -86,6 +86,11 @@ func Update(c *gin.Context) {
 
 	// we update the record based on the uservo id .
 	u.Id = uint64(userId)
+	dUser, err := model.GetUserByBy(uint64(userId))
+	if err!= nil {
+		handler.SendResponse(c, errno.ErrUserNotFound, nil)
+		return
+	}
 
 	// Validate the data
 	if err := u.Validate(); err != nil {
@@ -99,8 +104,13 @@ func Update(c *gin.Context) {
 		return
 	}
 
+
+	u.CreatedTime = dUser.CreatedTime
+	u.DeletedTime = dUser.DeletedTime
+	u.UpdateTime = time.Now()
 	// save changed fields.
 	if err := u.Update(); err != nil {
+		log.Infof("%v", err)
 		handler.SendResponse(c, errno.ErrDatabase, nil)
 		return
 	}

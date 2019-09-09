@@ -4,6 +4,7 @@ name: goserver
 url: http://127.0.0.1:8080
 max_ping_count: 10
 gormlog: true
+jwt_secret: Rtg8BPKNEf2mB4mgvKONGPZZQSaJWNLijxR42qRgq0iBb5
 log:
   writers: file,stdout
   logger_level: DEBUG

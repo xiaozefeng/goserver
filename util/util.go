@@ -6,5 +6,3 @@ func GetSorterId() string {
 	r, _ := shortid.Generate()
 	return r
 }
-
-
